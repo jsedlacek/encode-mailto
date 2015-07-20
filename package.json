@@ -1,7 +1,7 @@
 {
   "name": "encode-mailto",
   "version": "1.0.0",
-  "description": "Construct mailto link",
+  "description": "Encode mailto links",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test/test.js"
