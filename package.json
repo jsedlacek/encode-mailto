@@ -1,6 +1,5 @@
 {
   "name": "encode-mailto",
-  "version": "1.0.0",
   "description": "Encode mailto links",
   "main": "index.js",
   "scripts": {
