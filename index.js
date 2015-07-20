@@ -66,7 +66,7 @@ function URIEncodePair(cc1 , cc2, result, index) {
   var x = cc1 & 3;
   var y = (cc2 >> 6) & 0xF;
   var z = cc2 & 63;
-  var octets = new $Array(4);
+  var octets = new Array(4);
   octets[0] = (u >> 2) + 240;
   octets[1] = (((u & 3) << 4) | w) + 128;
   octets[2] = ((x << 4) | y) + 128;
@@ -91,7 +91,7 @@ function Encode(uri, unescape) {
         k++;
         if (k == uriLength) throw new Error("URI malformed");
         var cc2 = uri.charCodeAt(k);
-        if (cc2 < 0xDC00 || cc2 > 0xDFFF) throw new $URIError("URI malformed");
+        if (cc2 < 0xDC00 || cc2 > 0xDFFF) throw new Error("URI malformed");
         index = URIEncodePair(cc1, cc2, array, index);
       }
     }
