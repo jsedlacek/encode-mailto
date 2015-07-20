@@ -4,7 +4,7 @@ Encode mailto links
 ## Usage
 
 ```javascript
-var mailto = require('mailto');
+var mailto = require('encode-mailto');
 
 // Email
 var link = mailto('jakub@example.com'); // mailto:jakub@example.com
