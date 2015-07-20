@@ -1,5 +1,5 @@
 # format-mailto
-Encode mailto links
+Format mailto links
 
 ## Usage
 
